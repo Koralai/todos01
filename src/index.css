@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Kalam', serif;
+  font-weight: 300;
+  font-size: 32px;
+  background-color: #5A5353;
+  color: #EEE;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  #root {
+      justify-content: left;
+      padding: 0.75rem;
+  }
+}

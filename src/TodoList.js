@@ -6,10 +6,7 @@ class TodoList extends Component {
     render() {
         return (
             <ul>
-                <TodoItem text="Quad twist" />
-                <TodoItem text="Triple axel" />
-                <TodoItem text="QUINT LOOP BABY" />
-                <TodoItem text="Fall on my butt" />
+                { this.props.items.map(item => <TodoItem text={item.text} />) }
             </ul>
         );
     }
